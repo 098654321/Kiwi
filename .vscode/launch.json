@@ -1,0 +1,27 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "C++ Launch",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}\\build\\windows\\x64\\debug\\kiwi.exe", // 请替换为你的可执行文件路径
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb", // 确保安装了 GDB
+            "setupCommands": [
+                {
+                    "description": "启用 pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "kiwi",
+            "miDebuggerPath": "D:\\msys64\\mingw64\\bin\\gdb.exe", // 根据你的环境修改
+            "miDebuggerArgs": ""
+        }
+    ]
+}
