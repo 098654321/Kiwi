@@ -11,10 +11,6 @@ target("kiwi")
     -- add_linkdirs("src/lib/vcpkg/packages/xlnt_x64-windows/lib")
     -- add_links("xlnt")
 
-    -- add_includedirs("src/lib/ucontext_windows")
-    -- add_linkdirs("src/lib/ucontext_windows/Release")
-    -- add_links("ucontext")
-
     add_files("src/**.cc")
     remove_files("src/test/**.cc")
     remove_files("src/bin/**.cc")
