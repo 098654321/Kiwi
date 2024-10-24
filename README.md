@@ -1,2 +1,2 @@
 # Kiwi
-## fake "main" branch, real one see "master"
+## fake "main" branch, the real one see "master"
